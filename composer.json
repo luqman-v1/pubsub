@@ -1,0 +1,28 @@
+{
+    "name": "luqman-v1/pubsub",
+    "description": "package pubsub google for laravel",
+    "authors": [
+        {
+            "name": "luqmanul hakim",
+            "email": "n.loekman@gmail.com"
+        }
+    ],
+    "type": "library",
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "require": {
+        "google/cloud-pubsub": "^1.21"
+    },
+     "autoload": {
+        "psr-4": {
+            "LuqmanV1\\PubSub\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "LuqmanV1\\PubSub\\PubSubServiceProvider"
+            ]
+        }
+    }
+}
