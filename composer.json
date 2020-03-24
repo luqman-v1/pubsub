@@ -1,6 +1,6 @@
 {
     "name": "luqman-v1/pubsub",
-    "description": "package pubsub google for laravel",
+    "description": "package pubsub google cloud for laravel",
     "authors": [
         {
             "name": "luqmanul hakim",

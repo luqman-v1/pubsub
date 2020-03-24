@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\ServiceProvider;
-use LuqmanV1\PubSub\PubSub as ps;
+use LuqmanV1\PubSub\PubSub as PS;
 
 class PubSubServiceProvider extends ServiceProvider
 {
@@ -24,7 +24,7 @@ class PubSubServiceProvider extends ServiceProvider
     public function register()
     {
         App::bind('pubsub', function () {
-            return new ps;
+            return new PS;
         });
     }
 }
