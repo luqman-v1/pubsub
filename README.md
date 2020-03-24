@@ -3,6 +3,11 @@
 Simple package Laravel 5.2 for using Google Cloud PubSub
 
 
+[![Author](http://img.shields.io/badge/author-@luqmenul-blue.svg?style=flat-square)](https://twitter.com/luqmenul)
+[![Total Downloads](https://poser.pugx.org/luqman-v1/pubsub/downloads)](https://packagist.org/packages/luqman-v1/pubsub)
+[![License](https://poser.pugx.org/luqman-v1/pubsub/license)](https://packagist.org/packages/luqman-v1/pubsub)
+
+
 # Installation
 
 
