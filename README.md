@@ -17,14 +17,14 @@ composer require luqman-v1/pubsub
 
 Register the service provider in app.php
 
-```
+```php
 'providers' => [
     // ...
     LuqmanV1\PubSub\PubSubServiceProvider::class,
 ]
 ```
 Register the facade in app.php
-```
+```php
 'aliases' => [
     // ...
     'PubSub' => LuqmanV1\PubSub\Facade::class,
@@ -39,7 +39,7 @@ GCP_CREDENTIALS=SomeAwesomeBase64
 
 # Usage
 
-```
+```php
     //for publish message
     $message = [
             'data'       => 'My new message.',
