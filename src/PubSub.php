@@ -87,7 +87,7 @@ class PubSub
         try {
             $topic = self::pubsub()->topic($topic_name);
             $topic->publish($messages);
-        } catch (Execption $e) {
+        } catch (Exception $e) {
             return $e;
         }
     }
