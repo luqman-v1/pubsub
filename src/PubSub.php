@@ -93,6 +93,24 @@ class PubSub
     }
 
     /**
+     * this function for publish multiple message
+     * @param  string $topic_name
+     * @param  array  $messages
+     * @return void
+     */
+    public static function publishes($topic_name = "", $messages = [])
+    {
+        try {
+            $topic = self::pubsub()->topic($topic_name);
+            foreach($messages as $message){
+                $topic->publish($message);
+            }
+        } catch (Exception $e) {
+            return $e;
+        }
+    }
+
+    /**
      * this funciton for pull message base on subscription_name
      * @param  string $subscription_name
      * @return array
